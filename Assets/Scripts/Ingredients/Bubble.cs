@@ -17,7 +17,7 @@ public class Bubble : MonoBehaviour
         
     }
 
-    void OnClick()
+    public void OnClick()
     {
         if (mixer != null)
         {

@@ -17,7 +17,7 @@ public class Syrup : MonoBehaviour
         
     }
 
-    void OnClick()
+    public void OnClick()
     {
         if (mixer != null)
         {

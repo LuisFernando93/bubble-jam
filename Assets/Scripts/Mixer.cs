@@ -17,7 +17,7 @@ public class Mixer : MonoBehaviour
         
     }
 
-    void OnClick()
+    public void OnClick()
     {
         if (bubbleTea != null)
         {
@@ -36,7 +36,7 @@ public class Mixer : MonoBehaviour
 
             if (bubbleTea.hasBase & bubbleTea.hasSyrup & bubbleTea.hasBubble)
             {
-                Debug.Log("Saindo um Bubble Tea de " + bubbleTea.baseType + " com " + bubbleTea.syrup + "e bubbles " + bubbleTea.bubble + " no copo " + bubbleTea.cup + " :3");
+                Debug.Log("Saindo um Bubble Tea de " + bubbleTea.baseType + " com " + bubbleTea.syrup + " e bubbles " + bubbleTea.bubble + " no copo " + bubbleTea.cup + " :3");
                 bubbleTea = null;
             }
 
