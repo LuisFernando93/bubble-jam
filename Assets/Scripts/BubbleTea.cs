@@ -24,6 +24,18 @@ public class BubbleTea
         bubble = BubbleType.Null;
     }
 
+    public BubbleTea(CupType cup, BaseType baseType, SyrupType syrupType, BubbleType bubbleType)
+    {
+        this.cup = cup;
+        this.baseType = baseType;
+        this.syrup = syrupType;
+        this.bubble = bubbleType;
+        hasCup = true;
+        hasBase = true;
+        hasSyrup = true;
+        hasBubble = true;
+    }
+
     public void AddBase(BaseType baseType)
     {
         this.baseType = baseType;
