@@ -4,18 +4,7 @@ using UnityEngine;
 public class Mixer : MonoBehaviour
 {
     [HideInInspector] public BubbleTea bubbleTea = null;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private GameObject _scoreTracker;
 
     public void OnClick()
     {
@@ -37,6 +26,7 @@ public class Mixer : MonoBehaviour
             if (bubbleTea.hasBase & bubbleTea.hasSyrup & bubbleTea.hasBubble)
             {
                 Debug.Log("Saindo um Bubble Tea de " + bubbleTea.baseType + " com " + bubbleTea.syrup + " e bubbles " + bubbleTea.bubble + " no copo " + bubbleTea.cup + " :3");
+                _scoreTracker.GetComponent<ScoreTracker>().addScore(10);
                 bubbleTea = null;
             }
 
