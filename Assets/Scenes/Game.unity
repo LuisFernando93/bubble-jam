@@ -1834,7 +1834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e49659c169e60543861921931c4f5bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scoreTracker: {fileID: 627380805}
+  orders: {fileID: 1327705569}
 --- !u!1 &966043791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,10 +2601,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de397af2d58bffe4f95263bfd6c14b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePoints: 10
+  bonusTime: 2
+  penaltyTime: 1
   orderCupDisplay: {fileID: 486247066}
   orderBaseDisplay: {fileID: 924054511}
   orderSyrupDisplay: {fileID: 1024568468}
   orderBubbleDisplay: {fileID: 2092296155}
+  scoreTracker: {fileID: 627380805}
+  timer: {fileID: 542104118}
 --- !u!1 &1586966383
 GameObject:
   m_ObjectHideFlags: 0

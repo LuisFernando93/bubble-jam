@@ -4,7 +4,7 @@ using UnityEngine;
 public class Mixer : MonoBehaviour
 {
     [HideInInspector] public BubbleTea bubbleTea = null;
-    [SerializeField] private GameObject _scoreTracker;
+    [SerializeField] private GameObject orders;
 
     public void OnClick()
     {
@@ -26,7 +26,7 @@ public class Mixer : MonoBehaviour
             if (bubbleTea.hasBase & bubbleTea.hasSyrup & bubbleTea.hasBubble)
             {
                 Debug.Log("Saindo um Bubble Tea de " + bubbleTea.baseType + " com " + bubbleTea.syrup + " e bubbles " + bubbleTea.bubble + " no copo " + bubbleTea.cup + " :3");
-                _scoreTracker.GetComponent<ScoreTracker>().addScore(10);
+                orders.GetComponent<Orders>().CompleteOrder(bubbleTea);
                 bubbleTea = null;
             }
 

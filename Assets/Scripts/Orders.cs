@@ -4,10 +4,16 @@ using UnityEngine;
 public class Orders : MonoBehaviour
 {
     private BubbleTea bubbleTeaOrder;
+    private int currentPoints;
+    [SerializeField] private int scorePoints = 10;
+    [SerializeField] private int bonusTime = 2;
+    [SerializeField] private int penaltyTime = 1;
     [SerializeField] private GameObject orderCupDisplay;
     [SerializeField] private GameObject orderBaseDisplay;
     [SerializeField] private GameObject orderSyrupDisplay;
     [SerializeField] private GameObject orderBubbleDisplay;
+    [SerializeField] private GameObject scoreTracker;
+    [SerializeField] private GameObject timer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +29,7 @@ public class Orders : MonoBehaviour
 
     private void NewOrder()
     {
+        currentPoints = scorePoints;
         CupType cup;
         BaseType baseType;
         SyrupType syrup;
@@ -115,13 +122,27 @@ public class Orders : MonoBehaviour
         bubbleTeaOrder = new BubbleTea(cup, baseType, syrup, bubble);
     }
 
-    private void CheckOrder()
+    private bool OrderIsCorrect(BubbleTea bubbleTea)
     {
-
+        if (bubbleTea.cup == bubbleTeaOrder.cup & bubbleTea.baseType == bubbleTeaOrder.baseType & bubbleTea.syrup == bubbleTeaOrder.syrup & bubbleTea.bubble == bubbleTeaOrder.bubble)
+        {
+            return true;
+        }
+        else return false;
     }
 
-    public void CompleteOrder()
+    public void CompleteOrder(BubbleTea bubbleTea)
     {
-
+        if (OrderIsCorrect(bubbleTea))
+        {
+            scoreTracker.GetComponent<ScoreTracker>().AddScore(scorePoints);
+            timer.GetComponent<Timer>().AddTime(bonusTime);
+            Debug.Log("Pedido correto :3");
+            NewOrder();
+        } else
+        {
+            timer.GetComponent<Timer>().ReduceTime(penaltyTime);
+            Debug.Log("Pedido errado :(");
+        }
     }
 }

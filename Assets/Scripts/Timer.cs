@@ -40,8 +40,13 @@ public class Timer : MonoBehaviour
         timerDisplay.GetComponent<TextMeshProUGUI>().text = timeInt.ToString();
     }
 
-    private void AddTime(int time)
+    public void AddTime(int time)
     {
         timeLeft += time;
+    }
+
+    public void ReduceTime(int time)
+    {
+        timeLeft -= time;
     }
 }

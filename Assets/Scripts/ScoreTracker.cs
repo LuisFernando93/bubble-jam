@@ -18,7 +18,7 @@ public class ScoreTracker : MonoBehaviour
         _scoreDisplay.GetComponent<TextMeshProUGUI>().text = score.ToString();
     }
 
-    public void addScore(int value)
+    public void AddScore(int value)
     {
         score += value;
     }
