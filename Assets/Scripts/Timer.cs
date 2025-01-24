@@ -8,10 +8,12 @@ public class Timer : MonoBehaviour
     private float timeLeft;
     [SerializeField] private float timerValue;
     [SerializeField] private GameObject timerDisplay;
+    [SerializeField] private GameObject scoreMenu;
         
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Time.timeScale = 1.0f;
         timerOn = true;
         timeLeft = timerValue;
     }
@@ -28,7 +30,7 @@ public class Timer : MonoBehaviour
             {
                 timeLeft = 0;
                 timerOn = false;
-                Debug.Log("Acabou o tempo");
+                scoreMenu.GetComponent<ScoreMenu>().ShowFinalScore();
             }
             UpdateTimer();
         }
