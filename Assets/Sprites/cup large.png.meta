@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b9755729f8dc1c148b042106e616aa3e
+guid: 235d3b8e08290cc48b240083f58799aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 762026701007996336
-    second: lixo_0
+      213: 49160582036829634
+    second: large cup_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -73,9 +73,9 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lixo_0
+      name: large cup_0
       rect:
         serializedVersion: 2
-        x: 44
+        x: 71
         y: 0
-        width: 151
-        height: 198
+        width: 98
+        height: 193
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b5c1f64f33439a00800000000000000
-      internalID: 762026701007996336
+      spriteID: 2c5b145f947aea000800000000000000
+      internalID: 49160582036829634
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      large cup_0: 49160582036829634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

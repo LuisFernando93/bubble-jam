@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3744c4b790b33324b9c9302278a1b0e0
+guid: bd3bed43b9f4e2540bc94d82d392fb81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8169179243844584866
-    second: small cup_0
+      213: -4913260415528958834
+    second: syrup lemon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: small cup_0
+      name: syrup lemon_0
       rect:
         serializedVersion: 2
-        x: 74
+        x: 70
         y: 0
-        width: 91
-        height: 140
+        width: 123
+        height: 199
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a5c9d77d31ce5170800000000000000
-      internalID: 8169179243844584866
+      spriteID: e8488630fa790dbb0800000000000000
+      internalID: -4913260415528958834
       vertices: []
       indices: 
       edges: []
