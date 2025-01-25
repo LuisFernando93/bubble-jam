@@ -14,6 +14,7 @@ public class Orders : MonoBehaviour
     [SerializeField] private GameObject orderBubbleDisplay;
     [SerializeField] private GameObject scoreTracker;
     [SerializeField] private GameObject timer;
+    [SerializeField] private GameObject cupOrder, baseOrder, syrupOrder, bubbleOrder;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,14 +22,12 @@ public class Orders : MonoBehaviour
         NewOrder();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void NewOrder()
     {
+        cupOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+        baseOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+        syrupOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+        bubbleOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
         currentPoints = scorePoints;
         CupType cup;
         BaseType baseType;

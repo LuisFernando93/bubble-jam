@@ -2956,6 +2956,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orders: {fileID: 1327705569}
   mixServe: {fileID: 945558323}
+  baseOrder: {fileID: 924054511}
+  syrupOrder: {fileID: 1024568468}
+  bubbleOrder: {fileID: 2092296155}
 --- !u!1 &966043791
 GameObject:
   m_ObjectHideFlags: 0
@@ -3807,6 +3810,10 @@ MonoBehaviour:
   orderBubbleDisplay: {fileID: 2092296155}
   scoreTracker: {fileID: 627380805}
   timer: {fileID: 542104118}
+  cupOrder: {fileID: 486247066}
+  baseOrder: {fileID: 924054511}
+  syrupOrder: {fileID: 1024568468}
+  bubbleOrder: {fileID: 2092296155}
 --- !u!1 &1329602273
 GameObject:
   m_ObjectHideFlags: 0

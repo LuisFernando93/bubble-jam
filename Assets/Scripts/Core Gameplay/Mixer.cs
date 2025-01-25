@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class Mixer : MonoBehaviour
@@ -6,6 +7,7 @@ public class Mixer : MonoBehaviour
     [HideInInspector] public BubbleTea bubbleTea = null;
     [SerializeField] private GameObject orders;
     [SerializeField] private GameObject mixServe;
+    [SerializeField] private GameObject baseOrder, syrupOrder, bubbleOrder;
 
     public void OnClick()
     {
@@ -14,15 +16,18 @@ public class Mixer : MonoBehaviour
             if (!bubbleTea.hasBase)
             {
                 Debug.Log("Você ainda não escolheu uma base :(");
-            }
+                baseOrder.GetComponent<TextMeshProUGUI>().color = Color.red;
+            } else baseOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
             if (!bubbleTea.hasSyrup)
             {
                 Debug.Log("Está faltando o xarope :(");
-            }
+                syrupOrder.GetComponent<TextMeshProUGUI>().color = Color.red;
+            } else syrupOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
             if (!bubbleTea.hasBubble)
             {
                 Debug.Log("Deixou de colocar o principal! O Bubble! >:(");
-            }
+                bubbleOrder.GetComponent<TextMeshProUGUI>().color = Color.red;
+            } else bubbleOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
 
             if (bubbleTea.hasBase & bubbleTea.hasSyrup & bubbleTea.hasBubble)
             {
