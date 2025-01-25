@@ -2,17 +2,19 @@ using UnityEngine;
 
 public class TrashCan : MonoBehaviour
 {
-    [SerializeField] private GameObject mixer;
+    [SerializeField] private GameObject _mixer;
+    [SerializeField] private AudioClip _trashClick;
 
     public void OnClick()
     {
-        if (mixer != null)
+        if (_mixer != null)
         {
-            Mixer mixerScript = mixer.GetComponent<Mixer>();
+            Mixer mixerScript = _mixer.GetComponent<Mixer>();
             if (mixerScript.bubbleTea != null)
             {
+                SoundManager.Instance.PlaySFX(_trashClick);
                 mixerScript.bubbleTea = null;
-                mixer.SetActive(false);
+                _mixer.SetActive(false);
                 Debug.Log("Para de desperdicar ingrediente >:I");
             }
             

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class StartMenu : MonoBehaviour
 {
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
+    [SerializeField] private AudioClip _buttonClick, _menuOST;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -46,5 +47,10 @@ public class StartMenu : MonoBehaviour
     public void ExitButton()
     {
         Application.Quit();
+    }
+
+    public void MenuClickSFX()
+    {
+        SoundManager.Instance.PlaySFX(_buttonClick);
     }
 }

@@ -8,10 +8,12 @@ public class ScoreMenu : MonoBehaviour
     [SerializeField] private GameObject _gameContainer;
     [SerializeField] private GameObject _finalScore;
     [SerializeField] private GameObject _scoreTracker;
+    [SerializeField] private AudioClip _buttonClick, _fanfare;
 
     public void ShowFinalScore()
     {
         Time.timeScale = 0.0f;
+        SoundManager.Instance.PlaySFX(_fanfare);
         _finalScore.GetComponent<TextMeshProUGUI>().text = _scoreTracker.GetComponent<ScoreTracker>().score.ToString();
         _gameContainer.SetActive(false);
         _scoreMenuContainer.SetActive(true);
@@ -30,5 +32,10 @@ public class ScoreMenu : MonoBehaviour
     public void ExitButton()
     {
         Application.Quit();
+    }
+
+    public void ButtonClickSFX()
+    {
+        SoundManager.Instance.PlaySFX(_buttonClick);
     }
 }

@@ -15,6 +15,7 @@ public class Orders : MonoBehaviour
     [SerializeField] private GameObject scoreTracker;
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject cupOrder, baseOrder, syrupOrder, bubbleOrder;
+    [SerializeField] private AudioClip _correctOrderSFX, _wrongOrderSFX;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -134,12 +135,14 @@ public class Orders : MonoBehaviour
     {
         if (OrderIsCorrect(bubbleTea))
         {
+            SoundManager.Instance.PlaySFX(_correctOrderSFX);
             scoreTracker.GetComponent<ScoreTracker>().AddScore(scorePoints);
             timer.GetComponent<Timer>().AddTime(bonusTime);
             Debug.Log("Pedido correto :3");
             NewOrder();
         } else
         {
+            SoundManager.Instance.PlaySFX(_wrongOrderSFX);
             timer.GetComponent<Timer>().ReduceTime(penaltyTime);
             Debug.Log("Pedido errado :(");
         }

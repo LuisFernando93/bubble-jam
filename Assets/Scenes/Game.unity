@@ -561,6 +561,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &375689455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,6 +848,18 @@ MonoBehaviour:
       - m_Target: {fileID: 644038873}
         m_TargetAssemblyTypeName: ScoreMenu, Assembly-CSharp
         m_MethodName: MainMenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 644038873}
+        m_TargetAssemblyTypeName: ScoreMenu, Assembly-CSharp
+        m_MethodName: ButtonClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1252,6 +1276,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 644038873}
+        m_TargetAssemblyTypeName: ScoreMenu, Assembly-CSharp
+        m_MethodName: ButtonClickSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &508796195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,7 +1555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca360e4b588940341b43c29491ebc165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 945558323}
+  _mixer: {fileID: 945558323}
+  _trashClick: {fileID: 8300000, guid: efda6fa456a2d6c4bb83d963ab92d5ad, type: 3}
 --- !u!222 &535496366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1663,6 +1700,18 @@ MonoBehaviour:
       - m_Target: {fileID: 549653215}
         m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1966,6 +2015,8 @@ MonoBehaviour:
   _gameContainer: {fileID: 652449246}
   _finalScore: {fileID: 570332782}
   _scoreTracker: {fileID: 627380805}
+  _buttonClick: {fileID: 8300000, guid: a3258faea545c7c46bbdbb391ac2c546, type: 3}
+  _fanfare: {fileID: 8300000, guid: 9abfd695085c0584fb3cb7159a528c2c, type: 3}
 --- !u!1 &652449246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,10 +2046,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1776335844}
-  - {fileID: 1105733340}
-  - {fileID: 1723497657}
-  - {fileID: 1649058037}
-  - {fileID: 1603776517}
+  - {fileID: 2028053007}
   - {fileID: 945558324}
   - {fileID: 535496362}
   - {fileID: 627380806}
@@ -2166,6 +2214,18 @@ MonoBehaviour:
       - m_Target: {fileID: 686378423}
         m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2959,6 +3019,7 @@ MonoBehaviour:
   baseOrder: {fileID: 924054511}
   syrupOrder: {fileID: 1024568468}
   bubbleOrder: {fileID: 2092296155}
+  _missingIngredient: {fileID: 8300000, guid: 0a4052815d51b8f459a91df5557b3a42, type: 3}
 --- !u!1 &966043791
 GameObject:
   m_ObjectHideFlags: 0
@@ -3045,6 +3106,18 @@ MonoBehaviour:
       - m_Target: {fileID: 966043796}
         m_TargetAssemblyTypeName: Syrup, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3348,7 +3421,7 @@ RectTransform:
   - {fileID: 1954728784}
   - {fileID: 375689453}
   - {fileID: 1586966384}
-  m_Father: {fileID: 652449247}
+  m_Father: {fileID: 2028053007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3441,6 +3514,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1110997982}
         m_TargetAssemblyTypeName: Syrup, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3588,6 +3673,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1195507555}
         m_TargetAssemblyTypeName: Bubble, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3814,6 +3911,8 @@ MonoBehaviour:
   baseOrder: {fileID: 924054511}
   syrupOrder: {fileID: 1024568468}
   bubbleOrder: {fileID: 2092296155}
+  _correctOrderSFX: {fileID: 8300000, guid: 5d376ea487fe139408e183a4d7b98c74, type: 3}
+  _wrongOrderSFX: {fileID: 8300000, guid: 627176bfbcb3fcd4fa117eb37be167b4, type: 3}
 --- !u!1 &1329602273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3900,6 +3999,18 @@ MonoBehaviour:
       - m_Target: {fileID: 644038873}
         m_TargetAssemblyTypeName: ScoreMenu, Assembly-CSharp
         m_MethodName: RetryButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 644038873}
+        m_TargetAssemblyTypeName: ScoreMenu, Assembly-CSharp
+        m_MethodName: ButtonClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4042,6 +4153,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1586966386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4126,7 +4249,7 @@ RectTransform:
   - {fileID: 1752031486}
   - {fileID: 1770694823}
   - {fileID: 2122759395}
-  m_Father: {fileID: 652449247}
+  m_Father: {fileID: 2028053007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4164,7 +4287,7 @@ RectTransform:
   - {fileID: 1110997978}
   - {fileID: 1855926405}
   - {fileID: 966043792}
-  m_Father: {fileID: 652449247}
+  m_Father: {fileID: 2028053007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4277,7 +4400,7 @@ RectTransform:
   - {fileID: 686378419}
   - {fileID: 1195507551}
   - {fileID: 549653211}
-  m_Father: {fileID: 652449247}
+  m_Father: {fileID: 2028053007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4370,6 +4493,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1752031490}
         m_TargetAssemblyTypeName: Base, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4517,6 +4652,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1770694827}
         m_TargetAssemblyTypeName: Base, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4843,6 +4990,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1855926407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5126,6 +5285,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1954728786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5179,6 +5350,59 @@ MonoBehaviour:
   cupType: 1
   mixer: {fileID: 945558323}
   cupImage: {fileID: 8169179243844584866, guid: 3744c4b790b33324b9c9302278a1b0e0, type: 3}
+--- !u!1 &2028053006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2028053007}
+  - component: {fileID: 2028053008}
+  m_Layer: 5
+  m_Name: Ingredients
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2028053007
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028053006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1105733340}
+  - {fileID: 1723497657}
+  - {fileID: 1649058037}
+  - {fileID: 1603776517}
+  m_Father: {fileID: 652449247}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2028053008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028053006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e20c61948723204c8d93bb0d417b233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ingredientClick: {fileID: 8300000, guid: 819f36644bf0a524eb8c87ecf971d87d, type: 3}
 --- !u!1 &2092296155
 GameObject:
   m_ObjectHideFlags: 0
@@ -5537,6 +5761,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2122759399}
         m_TargetAssemblyTypeName: Base, Assembly-CSharp
         m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2028053008}
+        m_TargetAssemblyTypeName: IngredientSFX, Assembly-CSharp
+        m_MethodName: IngredientClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

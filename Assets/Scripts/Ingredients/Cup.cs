@@ -7,18 +7,6 @@ public class Cup : MonoBehaviour
     [SerializeField] private GameObject mixer;
     [SerializeField] private Sprite cupImage;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnClick()
     {
         if (mixer != null)
