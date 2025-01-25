@@ -12,6 +12,7 @@ public class TrashCan : MonoBehaviour
             if (mixerScript.bubbleTea != null)
             {
                 mixerScript.bubbleTea = null;
+                mixer.SetActive(false);
                 Debug.Log("Para de desperdicar ingrediente >:I");
             }
             

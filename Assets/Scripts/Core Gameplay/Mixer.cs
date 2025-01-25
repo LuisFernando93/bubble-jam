@@ -5,6 +5,7 @@ public class Mixer : MonoBehaviour
 {
     [HideInInspector] public BubbleTea bubbleTea = null;
     [SerializeField] private GameObject orders;
+    [SerializeField] private GameObject mixServe;
 
     public void OnClick()
     {
@@ -28,6 +29,7 @@ public class Mixer : MonoBehaviour
                 Debug.Log("Saindo um Bubble Tea de " + bubbleTea.baseType + " com " + bubbleTea.syrup + " e bubbles " + bubbleTea.bubble + " no copo " + bubbleTea.cup + " :3");
                 orders.GetComponent<Orders>().CompleteOrder(bubbleTea);
                 bubbleTea = null;
+                mixServe.SetActive(false);
             }
 
         } else
