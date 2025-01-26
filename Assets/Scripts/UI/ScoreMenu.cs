@@ -13,6 +13,7 @@ public class ScoreMenu : MonoBehaviour
     public void ShowFinalScore()
     {
         Time.timeScale = 0.0f;
+        SoundManager.Instance.StopMusic();
         SoundManager.Instance.PlaySFX(_fanfare);
         _finalScore.GetComponent<TextMeshProUGUI>().text = _scoreTracker.GetComponent<ScoreTracker>().score.ToString();
         _gameContainer.SetActive(false);

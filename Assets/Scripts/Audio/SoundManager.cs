@@ -30,7 +30,12 @@ public class SoundManager : MonoBehaviour
         _musicSource.clip = clip;
         _musicSource.Play();
     }
-    
+
+    public void StopMusic()
+    {
+        _musicSource.Stop();
+    }
+
     public void ChangeMasterVolume(float value)
     {
         _mixer.SetFloat("MasterVolume", Mathf.Log10(value) * 20);
@@ -66,4 +71,6 @@ public class SoundManager : MonoBehaviour
                 return 1f;//String incompativel
         }
     }
+
+    
 }
