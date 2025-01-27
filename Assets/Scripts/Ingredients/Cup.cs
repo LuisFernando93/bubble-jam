@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class Cup : MonoBehaviour
 {
     [SerializeField] private CupType cupType;
-    [SerializeField] private GameObject mixer;
+    [SerializeField] private GameObject mixer, orders;
     [SerializeField] private Sprite cupImage;
 
     public void OnClick()
@@ -18,6 +18,7 @@ public class Cup : MonoBehaviour
                 mixer.SetActive(true);
                 mixer.GetComponent<Image>().sprite = cupImage;
                 mixer.GetComponent<Image>().SetNativeSize();
+                orders.GetComponent<Orders>().CheckCup(this.cupType);
             } 
         }
     }

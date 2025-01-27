@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bubble : MonoBehaviour
 {
     [SerializeField] private BubbleType bubbleType;
-    [SerializeField] private GameObject mixer;
+    [SerializeField] private GameObject mixer, orders;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,6 +27,7 @@ public class Bubble : MonoBehaviour
                 if (!mixerScript.bubbleTea.hasBubble)
                 {
                     mixerScript.bubbleTea.AddBubble(this.bubbleType);
+                    orders.GetComponent<Orders>().CheckBubble(this.bubbleType);
                 }
             }
         }

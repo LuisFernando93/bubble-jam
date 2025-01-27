@@ -3,7 +3,7 @@ using UnityEngine;
 public class Syrup : MonoBehaviour
 {
     [SerializeField] private SyrupType syrupType;
-    [SerializeField] private GameObject mixer;
+    [SerializeField] private GameObject mixer, orders;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,8 +27,10 @@ public class Syrup : MonoBehaviour
                 if (!mixerScript.bubbleTea.hasSyrup)
                 {
                     mixerScript.bubbleTea.AddSyrup(this.syrupType);
+                    orders.GetComponent<Orders>().CheckSyrup(this.syrupType);
                 }
             }
         }
+
     }
 }

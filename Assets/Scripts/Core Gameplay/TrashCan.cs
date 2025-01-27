@@ -4,6 +4,7 @@ public class TrashCan : MonoBehaviour
 {
     [SerializeField] private GameObject _mixer;
     [SerializeField] private AudioClip _trashClick;
+    [SerializeField] private GameObject orders;
 
     public void OnClick()
     {
@@ -17,7 +18,7 @@ public class TrashCan : MonoBehaviour
                 _mixer.SetActive(false);
                 Debug.Log("Para de desperdicar ingrediente >:I");
             }
-            
+            orders.GetComponent<Orders>().SetLabelsToDefault();
             
         }
     }

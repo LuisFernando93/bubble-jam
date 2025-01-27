@@ -625,6 +625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cupType: 2
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
   cupImage: {fileID: 9110611899507858341, guid: 3b62ae9c30ba9974aaf087ee2a2dca7e, type: 3}
 --- !u!1 &409363627
 GameObject:
@@ -1557,6 +1558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mixer: {fileID: 945558323}
   _trashClick: {fileID: 8300000, guid: efda6fa456a2d6c4bb83d963ab92d5ad, type: 3}
+  orders: {fileID: 1327705569}
 --- !u!222 &535496366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1773,6 +1775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubbleType: 3
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
 --- !u!1 &570332782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,6 +2304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubbleType: 1
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
 --- !u!1 &686403891
 GameObject:
   m_ObjectHideFlags: 0
@@ -3193,6 +3197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syrupType: 3
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
 --- !u!1 &1024568468
 GameObject:
   m_ObjectHideFlags: 0
@@ -3601,6 +3606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syrupType: 1
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
 --- !u!1 &1195507550
 GameObject:
   m_ObjectHideFlags: 0
@@ -3760,6 +3766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubbleType: 2
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
 --- !u!1 &1243433467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3874,7 +3881,7 @@ GameObject:
   - component: {fileID: 1327705570}
   - component: {fileID: 1327705571}
   m_Layer: 0
-  m_Name: Order
+  m_Name: Orders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4367,6 +4374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cupType: 3
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
   cupImage: {fileID: 49160582036829634, guid: 235d3b8e08290cc48b240083f58799aa, type: 3}
 --- !u!1 &1603776516
 GameObject:
@@ -4716,6 +4724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseType: 1
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
 --- !u!1 &1770694822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4875,6 +4884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseType: 2
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
 --- !u!1 &1771826195
 GameObject:
   m_ObjectHideFlags: 0
@@ -5205,6 +5215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syrupType: 2
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
 --- !u!1 &1888447581
 GameObject:
   m_ObjectHideFlags: 0
@@ -5500,6 +5511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cupType: 1
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
   cupImage: {fileID: 8169179243844584866, guid: 3744c4b790b33324b9c9302278a1b0e0, type: 3}
 --- !u!1 &2028053006
 GameObject:
@@ -5985,6 +5997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseType: 3
   mixer: {fileID: 945558323}
+  orders: {fileID: 1327705569}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -21,19 +21,19 @@ public class Mixer : MonoBehaviour
                 Debug.Log("Você ainda não escolheu uma base :(");
                 baseOrder.GetComponent<TextMeshProUGUI>().color = Color.red;
                 missingIngredient = true;
-            } else baseOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+            } 
             if (!bubbleTea.hasSyrup)
             {
                 Debug.Log("Está faltando o xarope :(");
                 syrupOrder.GetComponent<TextMeshProUGUI>().color = Color.red;
                 missingIngredient = true;
-            } else syrupOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+            }
             if (!bubbleTea.hasBubble)
             {
                 Debug.Log("Deixou de colocar o principal! O Bubble! >:(");
                 bubbleOrder.GetComponent<TextMeshProUGUI>().color = Color.red;
                 missingIngredient = true;
-            } else bubbleOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+            }
 
             if (missingIngredient)
             {

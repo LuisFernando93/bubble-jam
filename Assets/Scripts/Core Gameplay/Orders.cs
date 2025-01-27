@@ -25,10 +25,7 @@ public class Orders : MonoBehaviour
 
     private void NewOrder()
     {
-        cupOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
-        baseOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
-        syrupOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
-        bubbleOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+        SetLabelsToDefault();
         currentPoints = scorePoints;
         CupType cup;
         BaseType baseType;
@@ -147,4 +144,45 @@ public class Orders : MonoBehaviour
             Debug.Log("Pedido errado :(");
         }
     }
+
+    public void CheckCup(CupType cup)
+    {
+        if (cup == bubbleTeaOrder.cup)
+        {
+            cupOrder.GetComponent<TextMeshProUGUI>().color = Color.blue;
+        } else cupOrder.GetComponent<TextMeshProUGUI>().color = Color.red;
+    }
+
+    public void CheckBase(BaseType baseType)
+    {
+        if (baseType == bubbleTeaOrder.baseType)
+        {
+            baseOrder.GetComponent<TextMeshProUGUI>().color = Color.blue;
+        } else baseOrder.GetComponent<TextMeshProUGUI>().color = Color.red;
+    }
+
+    public void CheckSyrup(SyrupType syrup)
+    {
+        if (syrup == bubbleTeaOrder.syrup)
+        {
+            syrupOrder.GetComponent<TextMeshProUGUI>().color = Color.blue ;
+        } else syrupOrder.GetComponent<TextMeshProUGUI>().color = Color.red;
+    }
+
+    public void CheckBubble(BubbleType bubble)
+    {
+        if (bubble == bubbleTeaOrder.bubble)
+        {
+            bubbleOrder.GetComponent<TextMeshProUGUI>().color = Color.blue;
+        } else bubbleOrder.GetComponent<TextMeshProUGUI>().color = Color.red;
+    } 
+
+    public void SetLabelsToDefault()
+    {
+        cupOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+        baseOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+        syrupOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+        bubbleOrder.GetComponent<TextMeshProUGUI>().color = Color.black;
+    }
+
 }
